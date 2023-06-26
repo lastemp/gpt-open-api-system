@@ -9,7 +9,7 @@ pub async fn generate_message_response(
     completion_request: CompletionRequest,
 ) -> std::result::Result<String, reqwest::Error> {
     let api_key: String =
-        String::from("Bearer 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");
+        String::from("Bearer OPENAI_API_KEY");
     let api_url: String = String::from("https://api.openai.com/v1/chat/completions");
     let mut message_content = String::from("");
 

@@ -1,7 +1,6 @@
 # gpt-open-api-system
 
-This RESTful Actix Web API examples illustrates how to intergrate with OpenAI’s chat API and exchange messages.
-[OpenAI’ chat API](https://platform.openai.com/docs/guides/gpt/chat-completions-api)
+This RESTful Actix Web API examples illustrates how to intergrate with [OpenAI’s chat API](https://platform.openai.com/docs/guides/gpt/chat-completions-api) and exchange messages.
 
 Currently this RESTful API supports: 
 - Chat Completions
@@ -19,19 +18,22 @@ The RESTful Actix Web API has below listed dependencies:
 
 You may need to ensure that you are running the commands with the correct MySQL user/password.
 
-1. Create `.env` file:
+1. Update OPENAI_API_KEY:
+   On Directory "gpt-open-api-system\src", open "api_layer.rs" and search for this line of code "let api_key: String = String::from("Bearer OPENAI_API_KEY") ". Replace OPENAI_API_KEY with your key to proceed with testing.
+
+2. Create `.env` file:
 
    ```ini
    SERVER_ADDR=127.0.0.1:8080
    ```
 
-5. Run the server:
+3. Run the server:
 
    ```shell
    cargo run
    ```
 
-6. Using a different terminal send an HTTP POST requests to the running server:
+4. Using a different terminal send an HTTP POST requests to the running server:
 
    Directory "gpt-open-api-system\apis" contains below listed api file:
    - processmessage.txt
