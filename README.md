@@ -9,8 +9,6 @@ The RESTful Actix Web API has below listed dependencies:
 - [Actix Web](https://github.com/actix/actix-web) web framework for Rust
 - [Serde](https://github.com/serde-rs/serde) for serializing and deserializing Rust data structures
 - [Reqwest](https://github.com/seanmonstar/reqwest) Rust HTTP Client
-- [MySQL](https://github.com/mysql/mysql-server) MySQL database server
-- [mysql](https://github.com/blackbeam/rust-mysql-simple) MySql database driver
 
 ## Instructions
 
